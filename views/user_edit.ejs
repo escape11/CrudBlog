@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+		<h1><%= title %></h1>
+		<p>Welcome to <%= title %></p>
+		<form action="/users/update_user/<%= user.id %>" method="POST">
+			<label>First Name: </label>
+			<input name="first_name" value="<%= user.FirstName %>" />
+			<br />
+			<label>Last Name: </label>
+			<input name="last_name" value="<%= user.LastName %>" />
+			<br />
+			<label>Email: </label>
+			<input name="email" value="<%= user.Email %>" />
+			<br />
+			<label>Phone Number: </label>
+			<input name="phone_number" value="<%= user.PhoneNumber %>" />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>

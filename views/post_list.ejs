@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+			<% for(let i = 0; i < entities.length; i++){ %>
+			<tr>
+				<td><%= entities[i].PostName %></td>
+			
+				<td>
+					<a href="/posts/view/<%= entities[i].id %>">View</a>
+					<a href="/posts/edit/<%= entities[i].id %>">Update</a>
+					<a href="/posts/delete/<%= entities[i].id %>">Delete</a>
+				</td>
+			</tr>
+			<% } %>
+		</table>
+	</body>
+</html>
