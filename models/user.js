@@ -14,6 +14,18 @@ module.exports = function (sequelize, Sequelize) {
 				type: Sequelize.STRING,
 				field: 'last_name',
 			},
+			Role: {
+				type: Sequelize.STRING,
+				field: 'role',
+			},
+			EmploymentStatus: {
+				type: Sequelize.STRING,
+				field: 'employmentstatus',
+			},
+			ReportsTo: {
+				type: Sequelize.STRING,
+				field: 'reportsto',
+			},
 			Email: {
 				type: Sequelize.STRING,
 				field: 'email',
